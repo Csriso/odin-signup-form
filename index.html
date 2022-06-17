@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="header">
+          <img src="./logo.png" alt="" srcset="" class="odin-logo" />
+          <p class="odin-text">ODIN</p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="header-form">
+          <p>
+            This is not a real service! This is only some exercise to practice
+            HTML and CSS! Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Cursus metus aliquam eleifend mi in nulla posuere
+            sollicitudin. Eget lorem dolor sed viverra ipsum nunc aliquet
+            bibendum enim. Eros donec ac odio tempor orci dapibus ultrices in.
+            Et tortor consequat id porta nibh venenatis.
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </div>
+        <form onsubmit="event.preventDefault(); handleSumbit();">
+          <div class="form-middle">
+            <p class="lets-do">Let's do this!</p>
+            <div class="input-container">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" />
+            </div>
+            <div class="input-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="input-container">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="password" />
+              <p class="error">* Passwords do not match</p>
+            </div>
+            <div class="input-container">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                class="confirm-password"
+              />
+            </div>
+          </div>
+          <div class="footer-form">
+            <div class="button">
+              <button type="submit">Create Account</button>
+            </div>
+            <div class="bottom">
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
